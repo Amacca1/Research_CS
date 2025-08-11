@@ -109,10 +109,14 @@ code {
 	padding: 2px 5px;
 	background-color: rgb(var(--gray-light));
 	border-radius: 2px;
+	font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+	font-size: 0.95em;
 }
 pre {
 	padding: 1.5em;
 	border-radius: 8px;
+	font-size: 0.95em;
+	overflow-x: auto;
 }
 pre > code {
 	all: unset;
@@ -152,4 +156,10 @@ hr {
 	clip-path: inset(50%);
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
+}
+
+/* Allow code blocks to wrap long lines and fit font size */
+pre, code {
+  white-space: pre-wrap;
+  word-break: break-word;
 }

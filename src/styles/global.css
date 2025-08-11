@@ -110,12 +110,12 @@ code {
 	background-color: rgb(var(--gray-light));
 	border-radius: 2px;
 	font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
-	font-size: 0.95em;
+	font-size: 0.85em;
 }
 pre {
 	padding: 1.5em;
 	border-radius: 8px;
-	font-size: 0.95em;
+	font-size: 0.85em;
 	overflow-x: auto;
 }
 pre > code {

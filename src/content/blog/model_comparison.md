@@ -4,9 +4,6 @@ description: 'Full report.'
 pubDate: 'Sep 3 2025'
 ---
 
-
-# RAG Pipeline Model Comparison Report with Evaluation Scores
-
 ## Executive Summary
 
 This enhanced report integrates LLM judge evaluation scores with the original performance metrics to provide a comprehensive view of model quality beyond just speed and cost.
@@ -32,6 +29,7 @@ The LLM judge evaluates responses on three key criteria:
 | Gemini 2.5 Pro | 100.0% | 2.34 | $0.030156 | 0.70 | 0.80 | 0.40 | 0.63 |
 | GPT-5 | 60.0% | 23.68 | $0.083575 | 0.50 | 0.50 | 0.30 | 0.43 |
 
+---
 
 ## Quality Analysis
 
@@ -61,8 +59,10 @@ The LLM judge evaluates responses on three key criteria:
 4. **Deepseek**: 0.60
 5. **GPT-O3**: 0.60
 
+---
 
 ## Detailed Evaluation Results
+
 
 ### Gemini 2.5 Flash - Detailed Evaluation
 

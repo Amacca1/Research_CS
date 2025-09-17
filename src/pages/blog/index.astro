@@ -100,11 +100,45 @@ const posts = (await getCollection('blog')).sort(
 					font-size: 1.25rem;
 					color: rgb(var(--gray));
 				}
+				.modern-header, .modern-footer {
+					background-color: #f8f9fa;
+					padding: 1rem;
+					box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+				}
+				.header-content, .footer-content {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					max-width: 960px;
+					margin: 0 auto;
+				}
+				.logo {
+					font-size: 1.5rem;
+					font-weight: bold;
+					color: #333;
+					text-decoration: none;
+				}
+				.main-nav a, .footer-nav a {
+					margin-left: 1rem;
+					color: #333;
+					text-decoration: none;
+				}
+				.main-nav a:hover, .footer-nav a:hover {
+					color: #007bff;
+				}
 			}
 		</style>
 	</head>
 	<body>
-		<Header />
+		<header class="modern-header">
+			<div class="header-content">
+				<a href="/" class="logo">CloudSecure</a>
+				<nav class="main-nav">
+					<a href="/blog">Blog</a>
+					<a href="/about">About</a>
+				</nav>
+			</div>
+		</header>
 		<main class="blog-main">
 			<section class="blog-header">
 				<h1 class="blog-title">CloudSecure Research Blog</h1>
@@ -130,6 +164,14 @@ const posts = (await getCollection('blog')).sort(
 				</ul>
 			</section>
 		</main>
-		<Footer />
+		<footer class="modern-footer">
+			<div class="footer-content">
+				<span>&copy; {new Date().getFullYear()} CloudSecure Research. All rights reserved.</span>
+				<nav class="footer-nav">
+					<a href="/blog">Blog</a>
+					<a href="/about">About</a>
+				</nav>
+			</div>
+		</footer>
 	</body>
 </html>

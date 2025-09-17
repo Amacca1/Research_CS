@@ -9,10 +9,16 @@ import Layout from '../layouts/BlogPost.astro';
 	pubDate={new Date('July 31 2025')}
 	heroImage={AboutHeroImage}
 >
-	<p>
-		Hi! My name is Alex McCarthy, and I am conducting research on behalf of <strong>CloudSecure</strong>. This blog documents my ongoing work in security automation, red teaming, and AI-driven vulnerability detection. Here you'll find technical write-ups, prototype designs, and reflections on building tools to help secure cloud environments and developer workflows.
-	</p>
-	<p>
-		I am a maths undergraduate at the University of Durham, being in my 3rd Year completing an integrated masters Mathematics degree. I am a huge fan of F1, Football (Up the Toffees!) and Padel.
-	</p>
+	<main class="about-main">
+		<section class="about-header">
+			<h1 class="about-title">About Alex McCarthy</h1>
+			<p class="about-description">Security automation, red teaming, and AI-driven vulnerability research for CloudSecure.</p>
+		</section>
+		<section class="about-details">
+			<h2>Background</h2>
+			<p>Alex McCarthy is a security researcher focused on building practical tools and systems for cloud security, developer workflows, and AI-powered analysis. This site documents ongoing experiments, technical findings, and project results.</p>
+			<h2>Contact</h2>
+			<p>For questions, feedback, or collaboration opportunities, please reach out via the contact form or connect on LinkedIn.</p>
+		</section>
+	</main>
 </Layout>

@@ -12,29 +12,29 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	</head>
 	<body>
 		<Header />
-		<main>
-			<h1>Welcome to the CloudSecure Research Blog</h1>
-			<p>
-				Hi, I'm Alex McCarthy, and I research security automation, red teaming, and AI-driven vulnerability detection on behalf of <strong>CloudSecure</strong>.
-			</p>
-			<p>
-				This blog is a living record of my technical explorations, experiments, and findings. I share insights, prototype designs, and practical guides for building tools that help secure cloud environments and developer workflows.
-			</p>
-			<h2>Recent Topics</h2>
-			<ul>
-				<li>Automated security scanning and notifications</li>
-				<li>Integrating AI models for code analysis</li>
-				<li>Red team prototype development</li>
-				<li>Prompt engineering and reasoning in LLMs</li>
-				<li>Chain of Thought prompting and its impact</li>
-				<li>Tree of Thoughts for complex reasoning</li>
-				<li>Chain of Preference Optimization</li>
-				<li>AI reasoning strategies and model evaluation</li>
-				<li>Exploring new cloud security technologies</li>
-			</ul>
-			<p>
-				Browse the <a href="/blog">blog</a> for daily updates, technical deep-dives, and project progress. If you have questions, feedback, or want to collaborate, please reach out!
-			</p>
+		<main class="main-hero">
+			<section class="hero-content">
+				<h1 class="hero-title">CloudSecure Research</h1>
+				<p class="hero-subtitle">Security Automation, Red Teaming, and AI-driven Vulnerability Detection</p>
+				<p class="hero-intro">Welcome! I'm Alex McCarthy. Here you'll find technical explorations, experiments, and practical guides for building tools that secure cloud environments and developer workflows.</p>
+				<div class="hero-actions">
+					<a href="/blog" class="btn-primary">Read the Blog</a>
+					<a href="/about" class="btn-secondary">About Me</a>
+				</div>
+			</section>
+			<section class="topics">
+				<h2>Recent Topics</h2>
+				<ul class="topics-list">
+					<li>Automated security scanning & notifications</li>
+					<li>Integrating AI models for code analysis</li>
+					<li>Red team prototype development</li>
+					<li>Prompt engineering & reasoning in LLMs</li>
+					<li>Chain of Thought & Tree of Thoughts</li>
+					<li>Preference Optimization in AI</li>
+					<li>Model evaluation & reasoning strategies</li>
+					<li>Emerging cloud security technologies</li>
+				</ul>
+			</section>
 		</main>
 		<Footer />
 	</body>

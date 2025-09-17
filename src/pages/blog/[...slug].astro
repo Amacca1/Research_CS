@@ -15,8 +15,6 @@ const post = Astro.props;
 const { Content } = await render(post);
 ---
 
-<img src="/IMG_8900.JPG" alt="Description of image" style="max-width:100%;border-radius:16px;" />
-
 <BlogPost {...post.data}>
 	<Content />
 </BlogPost>

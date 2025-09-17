@@ -1,8 +1,6 @@
 ---
 import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
 import Layout from '../layouts/BlogPost.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 ---
 
 <Layout
@@ -11,7 +9,6 @@ import Footer from '../components/Footer.astro';
 	pubDate={new Date('July 31 2025')}
 	heroImage={AboutHeroImage}
 >
-  <Header />
 	<main class="about-main cloudsecure-style">
 		<section class="about-header cloudsecure-hero">
 			<h1 class="about-title">About Me</h1>
@@ -24,7 +21,6 @@ import Footer from '../components/Footer.astro';
 			<p>For questions, feedback, or collaboration opportunities, please reach out via the contact form or connect on LinkedIn.</p>
 		</section>
 	</main>
-  <Footer />
   <style>
     body {
       background: #181a1b;

@@ -1,6 +1,8 @@
 ---
 import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
 import Layout from '../layouts/BlogPost.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout
@@ -9,6 +11,7 @@ import Layout from '../layouts/BlogPost.astro';
 	pubDate={new Date('July 31 2025')}
 	heroImage={AboutHeroImage}
 >
+  <Header />
 	<main class="about-main">
 		<section class="about-header">
 			<h1 class="about-title">About Alex McCarthy</h1>
@@ -21,4 +24,58 @@ import Layout from '../layouts/BlogPost.astro';
 			<p>For questions, feedback, or collaboration opportunities, please reach out via the contact form or connect on LinkedIn.</p>
 		</section>
 	</main>
+  <Footer />
+  <style>
+    .about-main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 0 4rem 0;
+    }
+    .about-header {
+      background: linear-gradient(90deg, #232526 0%, #414345 100%);
+      color: #fff;
+      border-radius: 18px;
+      padding: 2.5rem 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .about-title {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+    .about-description {
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+      color: #00c6ff;
+      font-weight: 500;
+    }
+    .about-details {
+      background: #fff;
+      border-radius: 18px;
+      padding: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .about-details h2 {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+      color: #232526;
+    }
+    .about-details p {
+      font-size: 1.1rem;
+      color: #232526;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 720px) {
+      .about-main {
+        width: 100%;
+        padding: 1rem;
+      }
+      .about-header, .about-details {
+        padding: 1rem;
+      }
+    }
+  </style>
 </Layout>

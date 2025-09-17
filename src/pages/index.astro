@@ -37,5 +37,96 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 			</section>
 		</main>
 		<Footer />
+		<style>
+			.main-hero {
+				max-width: 960px;
+				margin: 0 auto;
+				padding: 2rem 0 4rem 0;
+			}
+			.hero-content {
+				background: linear-gradient(90deg, #232526 0%, #414345 100%);
+				color: #fff;
+				border-radius: 18px;
+				padding: 2.5rem 2rem;
+				box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+				margin-bottom: 2rem;
+				text-align: center;
+			}
+			.hero-title {
+				font-size: 2.8rem;
+				font-weight: 700;
+				margin-bottom: 0.5rem;
+				letter-spacing: 1px;
+			}
+			.hero-subtitle {
+				font-size: 1.25rem;
+				margin-bottom: 1.5rem;
+				color: #00c6ff;
+				font-weight: 500;
+			}
+			.hero-intro {
+				font-size: 1.1rem;
+				margin-bottom: 2rem;
+				color: #e0e0e0;
+			}
+			.hero-actions {
+				margin-bottom: 2rem;
+			}
+			.btn-primary, .btn-secondary {
+				display: inline-block;
+				padding: 0.75rem 2rem;
+				border-radius: 8px;
+				font-size: 1.1rem;
+				font-weight: 600;
+				text-decoration: none;
+				margin: 0 0.5rem;
+				transition: background 0.2s, color 0.2s;
+			}
+			.btn-primary {
+				background: #00c6ff;
+				color: #232526;
+			}
+			.btn-primary:hover {
+				background: #232526;
+				color: #00c6ff;
+			}
+			.btn-secondary {
+				background: #414345;
+				color: #fff;
+				border: 1px solid #00c6ff;
+			}
+			.btn-secondary:hover {
+				background: #00c6ff;
+				color: #232526;
+			}
+			.topics {
+				background: #fff;
+				border-radius: 18px;
+				padding: 2rem;
+				box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+			}
+			.topics-list {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 0.75rem 2rem;
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				font-size: 1.1rem;
+				color: #232526;
+			}
+			@media (max-width: 720px) {
+				.main-hero {
+					width: 100%;
+					padding: 1rem;
+				}
+				.hero-content, .topics {
+					padding: 1rem;
+				}
+				.topics-list {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
 	</body>
 </html>

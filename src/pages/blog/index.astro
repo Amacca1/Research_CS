@@ -70,6 +70,38 @@ const posts = (await getCollection('blog')).sort(
 			ul a:hover img {
 				box-shadow: var(--box-shadow);
 			}
+			.blog-main {
+				max-width: 960px;
+				margin: 0 auto;
+				padding: 2rem 0 4rem 0;
+			}
+			.blog-header {
+				background: linear-gradient(90deg, #232526 0%, #414345 100%);
+				color: #fff;
+				border-radius: 18px;
+				padding: 2.5rem 2rem;
+				box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+				margin-bottom: 2rem;
+				text-align: center;
+			}
+			.blog-title {
+				font-size: 2.8rem;
+				font-weight: 700;
+				margin-bottom: 0.5rem;
+				letter-spacing: 1px;
+			}
+			.blog-description {
+				font-size: 1.25rem;
+				margin-bottom: 1.5rem;
+				color: #00c6ff;
+				font-weight: 500;
+			}
+			.blog-list {
+				background: #fff;
+				border-radius: 18px;
+				padding: 2rem;
+				box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+			}
 			@media (max-width: 720px) {
 				ul {
 					gap: 0.5em;
@@ -88,9 +120,8 @@ const posts = (await getCollection('blog')).sort(
 					width: 100%;
 					padding: 1rem;
 				}
-				.blog-header {
-					text-align: center;
-					margin-bottom: 2rem;
+				.blog-header, .blog-list {
+					padding: 1rem;
 				}
 				.blog-title {
 					font-size: 2.5rem;

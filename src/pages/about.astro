@@ -9,12 +9,12 @@ import Layout from '../layouts/BlogPost.astro';
 	pubDate={new Date('July 31 2025')}
 	heroImage={AboutHeroImage}
 >
-	<main class="about-main cloudsecure-style" style="padding: 2.5rem 1.5rem 4rem 1.5rem;">
-		<section class="about-header cloudsecure-hero">
+	<main class="about-main cloudsecure-style">
+		<section class="about-header cloudsecure-hero" style="margin-bottom:2.5rem;">
 			<h1 class="about-title">About Me</h1>
 			<p class="about-description">Personal research, security automation, red teaming, and AI-driven vulnerability exploration.</p>
 		</section>
-		<section class="about-details cloudsecure-topics">
+		<section class="about-details cloudsecure-topics" style="padding:2.5rem 2rem; box-sizing:border-box;">
 			<h2>Background</h2>
 			<p>I'm Alex McCarthy, a security researcher focused on building practical tools and systems for cloud security, developer workflows, and AI-powered analysis. This site is my personal space to document ongoing experiments, technical findings, and project results.</p>
 			<h2>Contact</h2>
@@ -40,6 +40,7 @@ import Layout from '../layouts/BlogPost.astro';
       box-shadow: 0 4px 24px rgba(0,0,0,0.18);
       margin-bottom: 2.5rem;
       text-align: center;
+      box-sizing: border-box;
     }
     .about-title {
       font-size: 3rem;
@@ -59,8 +60,9 @@ import Layout from '../layouts/BlogPost.astro';
     .about-details.cloudsecure-topics {
       background: #232526;
       border-radius: 24px;
-      padding: 2.5rem;
+      padding: 2.5rem 2rem;
       box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+      box-sizing: border-box;
     }
     .about-details h2 {
       font-size: 1.5rem;

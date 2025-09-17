@@ -19,9 +19,9 @@ const posts = (await getCollection('blog')).sort(
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<style>
 			body {
-				background: #f6f8fa;
+				background: #181a1b;
 				font-family: 'Atkinson Hyperlegible', Arial, sans-serif;
-				color: #232526;
+				color: #e3e3e3;
 			}
 			.cloudsecure-style {
 				max-width: 1100px;
@@ -30,10 +30,10 @@ const posts = (await getCollection('blog')).sort(
 			}
 			.cloudsecure-hero {
 				background: linear-gradient(90deg, #232526 0%, #00c6ff 100%);
-				color: #fff;
+				color: #e3e3e3;
 				border-radius: 24px;
 				padding: 3rem 2rem;
-				box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+				box-shadow: 0 4px 24px rgba(0,0,0,0.18);
 				margin-bottom: 2.5rem;
 				text-align: center;
 			}
@@ -42,19 +42,21 @@ const posts = (await getCollection('blog')).sort(
 				font-weight: 800;
 				margin-bottom: 0.5rem;
 				letter-spacing: 1px;
+				color: #fff;
+				text-shadow: 0 2px 8px rgba(0,0,0,0.18);
 			}
 			.blog-description {
 				font-size: 1.35rem;
 				margin-bottom: 1.5rem;
 				color: #00c6ff;
 				font-weight: 600;
-				text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+				text-shadow: 0 2px 8px rgba(0,0,0,0.18);
 			}
 			.blog-list.cloudsecure-topics {
-				background: #fff;
+				background: #232526;
 				border-radius: 24px;
 				padding: 2.5rem;
-				box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+				box-shadow: 0 2px 12px rgba(0,0,0,0.18);
 			}
 			.cloudsecure-list {
 				display: grid;
@@ -64,11 +66,11 @@ const posts = (await getCollection('blog')).sort(
 				padding: 0;
 				list-style: none;
 				font-size: 1.15rem;
-				color: #232526;
+				color: #e3e3e3;
 			}
 			.title {
 				margin: 0;
-				color: #232526;
+				color: #e3e3e3;
 				line-height: 1;
 				font-size: 1.25rem;
 				font-weight: 600;
@@ -97,6 +99,14 @@ const posts = (await getCollection('blog')).sort(
 				width: 100%;
 				height: auto;
 				object-fit: cover;
+			}
+			.cloudsecure-list li {
+				background: rgba(24,26,27,0.7);
+				border-radius: 12px;
+				padding: 0.75rem 1rem;
+				margin-bottom: 0.5rem;
+				color: #e3e3e3;
+				box-shadow: 0 1px 4px rgba(0,0,0,0.12);
 			}
 			@media (max-width: 900px) {
 				.cloudsecure-style {

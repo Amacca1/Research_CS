@@ -13,7 +13,10 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 			<section class="hero-content cloudsecure-hero">
 				<h1 class="hero-title">Alex McCarthy — Research & Security</h1>
 				<p class="hero-subtitle">Automation, Red Teaming, and AI-driven Vulnerability Detection</p>
-				<p class="hero-intro">Welcome! This is my personal research space for technical explorations, experiments, and practical guides on cloud security, developer workflows, and AI.</p>
+				<p class="hero-intro">
+					Welcome! This is my personal research space where I share hands-on experiments, technical deep-dives, and practical guides.<br>
+					<span style="color: #e3e3e3; font-size: 1.2em; font-weight: 500;">My focus is on cloud security, developer workflows, and the latest advances in AI for security automation and vulnerability detection.</span>
+				</p>
 				<div class="hero-actions">
 					<a href="/blog" class="btn-primary cloudsecure-btn">Read the Blog</a>
 					<a href="/about" class="btn-secondary cloudsecure-btn">About Me</a>
@@ -35,9 +38,9 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		</main>
 		<style>
 			body {
-				background: #f6f8fa;
+				background: #181a1b;
 				font-family: 'Atkinson Hyperlegible', Arial, sans-serif;
-				color: #232526;
+				color: #e3e3e3;
 			}
 			.cloudsecure-style {
 				max-width: 1100px;
@@ -46,10 +49,10 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 			}
 			.cloudsecure-hero {
 				background: linear-gradient(90deg, #232526 0%, #00c6ff 100%);
-				color: #fff;
+				color: #e3e3e3;
 				border-radius: 24px;
 				padding: 3rem 2rem;
-				box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+				box-shadow: 0 4px 24px rgba(0,0,0,0.18);
 				margin-bottom: 2.5rem;
 				text-align: center;
 			}
@@ -58,18 +61,21 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 				font-weight: 800;
 				margin-bottom: 0.5rem;
 				letter-spacing: 1px;
+				color: #fff;
+				text-shadow: 0 2px 8px rgba(0,0,0,0.18);
 			}
 			.hero-subtitle {
 				font-size: 1.35rem;
 				margin-bottom: 1.5rem;
 				color: #00c6ff;
 				font-weight: 600;
-				text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+				text-shadow: 0 2px 8px rgba(0,0,0,0.18);
 			}
 			.hero-intro {
 				font-size: 1.15rem;
 				margin-bottom: 2rem;
-				color: #e0e0e0;
+				color: #e3e3e3;
+				line-height: 1.7;
 			}
 			.hero-actions {
 				margin-bottom: 2rem;
@@ -83,7 +89,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 				text-decoration: none;
 				margin: 0 0.5rem;
 				transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-				box-shadow: 0 2px 8px rgba(0,198,255,0.08);
+				box-shadow: 0 2px 8px rgba(0,198,255,0.18);
 			}
 			.btn-primary.cloudsecure-btn {
 				background: #00c6ff;
@@ -95,7 +101,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 			}
 			.btn-secondary.cloudsecure-btn {
 				background: #232526;
-				color: #fff;
+				color: #e3e3e3;
 				border: 2px solid #00c6ff;
 			}
 			.btn-secondary.cloudsecure-btn:hover {
@@ -103,10 +109,10 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 				color: #232526;
 			}
 			.cloudsecure-topics {
-				background: #fff;
+				background: #232526;
 				border-radius: 24px;
 				padding: 2.5rem;
-				box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+				box-shadow: 0 2px 12px rgba(0,0,0,0.18);
 			}
 			.cloudsecure-list {
 				display: grid;
@@ -116,7 +122,15 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 				padding: 0;
 				list-style: none;
 				font-size: 1.15rem;
-				color: #232526;
+				color: #e3e3e3;
+			}
+			.cloudsecure-list li {
+				background: rgba(24,26,27,0.7);
+				border-radius: 12px;
+				padding: 0.75rem 1rem;
+				margin-bottom: 0.5rem;
+				color: #e3e3e3;
+				box-shadow: 0 1px 4px rgba(0,0,0,0.12);
 			}
 			@media (max-width: 900px) {
 				.cloudsecure-style {

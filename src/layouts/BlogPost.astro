@@ -15,42 +15,67 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 	<head>
 		<BaseHead title={title} description={description} />
 		<style>
+			body {
+				background: #181a1b;
+				font-family: 'Atkinson Hyperlegible', Arial, sans-serif;
+				color: #e3e3e3;
+			}
 			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
+				max-width: 900px;
+				margin: 0 auto;
+				padding: 2.5rem 1.5rem 4rem 1.5rem;
 			}
 			.hero-image {
 				width: 100%;
+				margin-bottom: 2rem;
 			}
 			.hero-image img {
 				display: block;
 				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
+				border-radius: 18px;
+				box-shadow: 0 4px 24px rgba(0,0,0,0.18);
 			}
 			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
+				background: #232526;
+				border-radius: 24px;
+				box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+				padding: 2.5rem 2rem;
 				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
+				color: #e3e3e3;
+				max-width: 800px;
 			}
 			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
+				margin-bottom: 1.5em;
+				padding: 1em 0 0.5em 0;
 				text-align: center;
-				line-height: 1;
+				line-height: 1.1;
 			}
 			.title h1 {
 				margin: 0 0 0.5em 0;
+				font-size: 2.5rem;
+				font-weight: 800;
+				color: #fff;
+				text-shadow: 0 2px 8px rgba(0,0,0,0.18);
 			}
 			.date {
 				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
+				color: #00c6ff;
+				font-weight: 600;
 			}
 			.last-updated-on {
 				font-style: italic;
+				color: #e3e3e3;
+			}
+			@media (max-width: 900px) {
+				main {
+					padding: 1rem;
+				}
+				.prose {
+					padding: 1.2rem 0.5rem;
+				}
+				.title h1 {
+					font-size: 1.5rem;
+				}
 			}
 		</style>
 	</head>

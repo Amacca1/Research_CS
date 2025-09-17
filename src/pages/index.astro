@@ -1,7 +1,5 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 ---
 
@@ -11,8 +9,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<Header />
-		<main class="main-hero cloudsecure-style">
+			<main class="main-hero cloudsecure-style">
 			<section class="hero-content cloudsecure-hero">
 				<h1 class="hero-title">Alex McCarthy — Research & Security</h1>
 				<p class="hero-subtitle">Automation, Red Teaming, and AI-driven Vulnerability Detection</p>
@@ -36,7 +33,6 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 				</ul>
 			</section>
 		</main>
-		<Footer />
 		<style>
 			body {
 				background: #f6f8fa;

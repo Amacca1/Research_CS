@@ -10,11 +10,11 @@ import Layout from '../layouts/BlogPost.astro';
 	heroImage={AboutHeroImage}
 >
 	<main class="about-main cloudsecure-style">
-		<section class="about-header cloudsecure-hero" style="margin-bottom:2.5rem;">
+		<section class="about-header cloudsecure-hero" style="margin-bottom:2.5rem; max-width:100%; box-sizing:border-box;">
 			<h1 class="about-title">About Me</h1>
 			<p class="about-description">Personal research, security automation, red teaming, and AI-driven vulnerability exploration.</p>
 		</section>
-		<section class="about-details cloudsecure-topics" style="padding:2.5rem 2rem; box-sizing:border-box;">
+		<section class="about-details cloudsecure-topics" style="max-width:100%; padding:2.5rem 2rem; box-sizing:border-box; overflow-wrap:break-word;">
 			<h2>Background</h2>
 			<p>I'm Alex McCarthy, a security researcher focused on building practical tools and systems for cloud security, developer workflows, and AI-powered analysis. This site is my personal space to document ongoing experiments, technical findings, and project results.</p>
 			<h2>Contact</h2>
@@ -31,6 +31,7 @@ import Layout from '../layouts/BlogPost.astro';
       max-width: 1100px;
       margin: 0 auto;
       padding: 2.5rem 1.5rem 4rem 1.5rem;
+      box-sizing: border-box;
     }
     .cloudsecure-hero {
       background: linear-gradient(90deg, #232526 0%, #00c6ff 100%);
@@ -41,6 +42,7 @@ import Layout from '../layouts/BlogPost.astro';
       margin-bottom: 2.5rem;
       text-align: center;
       box-sizing: border-box;
+      max-width: 100%;
     }
     .about-title {
       font-size: 3rem;
@@ -63,6 +65,7 @@ import Layout from '../layouts/BlogPost.astro';
       padding: 2.5rem 2rem;
       box-shadow: 0 2px 12px rgba(0,0,0,0.18);
       box-sizing: border-box;
+      max-width: 100%;
     }
     .about-details h2 {
       font-size: 1.5rem;
@@ -73,6 +76,12 @@ import Layout from '../layouts/BlogPost.astro';
       font-size: 1.15rem;
       color: #e3e3e3;
       margin-bottom: 1rem;
+    }
+    .about-main {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      box-sizing: border-box;
     }
     @media (max-width: 900px) {
       .cloudsecure-style {

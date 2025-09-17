@@ -12,19 +12,19 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	</head>
 	<body>
 		<Header />
-		<main class="main-hero">
-			<section class="hero-content">
-				<h1 class="hero-title">CloudSecure Research</h1>
-				<p class="hero-subtitle">Security Automation, Red Teaming, and AI-driven Vulnerability Detection</p>
-				<p class="hero-intro">Welcome! I'm Alex McCarthy. Here you'll find technical explorations, experiments, and practical guides for building tools that secure cloud environments and developer workflows.</p>
+		<main class="main-hero cloudsecure-style">
+			<section class="hero-content cloudsecure-hero">
+				<h1 class="hero-title">Alex McCarthy — Research & Security</h1>
+				<p class="hero-subtitle">Automation, Red Teaming, and AI-driven Vulnerability Detection</p>
+				<p class="hero-intro">Welcome! This is my personal research space for technical explorations, experiments, and practical guides on cloud security, developer workflows, and AI.</p>
 				<div class="hero-actions">
-					<a href="/blog" class="btn-primary">Read the Blog</a>
-					<a href="/about" class="btn-secondary">About Me</a>
+					<a href="/blog" class="btn-primary cloudsecure-btn">Read the Blog</a>
+					<a href="/about" class="btn-secondary cloudsecure-btn">About Me</a>
 				</div>
 			</section>
-			<section class="topics">
+			<section class="topics cloudsecure-topics">
 				<h2>Recent Topics</h2>
-				<ul class="topics-list">
+				<ul class="topics-list cloudsecure-list">
 					<li>Automated security scanning & notifications</li>
 					<li>Integrating AI models for code analysis</li>
 					<li>Red team prototype development</li>
@@ -38,92 +38,99 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		</main>
 		<Footer />
 		<style>
-			.main-hero {
-				max-width: 960px;
+			body {
+				background: #f6f8fa;
+				font-family: 'Atkinson Hyperlegible', Arial, sans-serif;
+				color: #232526;
+			}
+			.cloudsecure-style {
+				max-width: 1100px;
 				margin: 0 auto;
 				padding: 2rem 0 4rem 0;
 			}
-			.hero-content {
-				background: linear-gradient(90deg, #232526 0%, #414345 100%);
+			.cloudsecure-hero {
+				background: linear-gradient(90deg, #232526 0%, #00c6ff 100%);
 				color: #fff;
-				border-radius: 18px;
-				padding: 2.5rem 2rem;
-				box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-				margin-bottom: 2rem;
+				border-radius: 24px;
+				padding: 3rem 2rem;
+				box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+				margin-bottom: 2.5rem;
 				text-align: center;
 			}
 			.hero-title {
-				font-size: 2.8rem;
-				font-weight: 700;
+				font-size: 3rem;
+				font-weight: 800;
 				margin-bottom: 0.5rem;
 				letter-spacing: 1px;
 			}
 			.hero-subtitle {
-				font-size: 1.25rem;
+				font-size: 1.35rem;
 				margin-bottom: 1.5rem;
 				color: #00c6ff;
-				font-weight: 500;
+				font-weight: 600;
+				text-shadow: 0 2px 8px rgba(0,0,0,0.08);
 			}
 			.hero-intro {
-				font-size: 1.1rem;
+				font-size: 1.15rem;
 				margin-bottom: 2rem;
 				color: #e0e0e0;
 			}
 			.hero-actions {
 				margin-bottom: 2rem;
 			}
-			.btn-primary, .btn-secondary {
+			.cloudsecure-btn {
 				display: inline-block;
-				padding: 0.75rem 2rem;
-				border-radius: 8px;
-				font-size: 1.1rem;
-				font-weight: 600;
+				padding: 0.85rem 2.2rem;
+				border-radius: 10px;
+				font-size: 1.15rem;
+				font-weight: 700;
 				text-decoration: none;
 				margin: 0 0.5rem;
-				transition: background 0.2s, color 0.2s;
+				transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+				box-shadow: 0 2px 8px rgba(0,198,255,0.08);
 			}
-			.btn-primary {
+			.btn-primary.cloudsecure-btn {
 				background: #00c6ff;
 				color: #232526;
 			}
-			.btn-primary:hover {
+			.btn-primary.cloudsecure-btn:hover {
 				background: #232526;
 				color: #00c6ff;
 			}
-			.btn-secondary {
-				background: #414345;
+			.btn-secondary.cloudsecure-btn {
+				background: #232526;
 				color: #fff;
-				border: 1px solid #00c6ff;
+				border: 2px solid #00c6ff;
 			}
-			.btn-secondary:hover {
+			.btn-secondary.cloudsecure-btn:hover {
 				background: #00c6ff;
 				color: #232526;
 			}
-			.topics {
+			.cloudsecure-topics {
 				background: #fff;
-				border-radius: 18px;
-				padding: 2rem;
-				box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+				border-radius: 24px;
+				padding: 2.5rem;
+				box-shadow: 0 2px 12px rgba(0,0,0,0.04);
 			}
-			.topics-list {
+			.cloudsecure-list {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
-				gap: 0.75rem 2rem;
+				gap: 1rem 2.5rem;
 				margin: 0;
 				padding: 0;
 				list-style: none;
-				font-size: 1.1rem;
+				font-size: 1.15rem;
 				color: #232526;
 			}
-			@media (max-width: 720px) {
-				.main-hero {
-					width: 100%;
+			@media (max-width: 900px) {
+				.cloudsecure-style {
+					max-width: 100%;
 					padding: 1rem;
 				}
-				.hero-content, .topics {
-					padding: 1rem;
+				.cloudsecure-hero, .cloudsecure-topics {
+					padding: 1.5rem;
 				}
-				.topics-list {
+				.cloudsecure-list {
 					grid-template-columns: 1fr;
 				}
 			}

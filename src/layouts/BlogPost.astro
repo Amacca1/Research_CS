@@ -6,9 +6,8 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 
-type Props = CollectionEntry<'blog'>['data'];
-
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+// Remove heroImage from props
+const { title, description, pubDate, updatedDate } = Astro.props;
 ---
 
 <html lang="en">
@@ -24,16 +23,6 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				max-width: 900px;
 				margin: 0 auto;
 				padding: 2.5rem 1.5rem 4rem 1.5rem;
-			}
-			.hero-image {
-				width: 100%;
-				margin-bottom: 2rem;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 18px;
-				box-shadow: 0 4px 24px rgba(0,0,0,0.18);
 			}
 			.prose {
 				background: #232526;
@@ -84,9 +73,6 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<Header />
 		<main>
 			<article>
-				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
-				</div>
 				<div class="prose">
 					<div class="title">
 						<div class="date">

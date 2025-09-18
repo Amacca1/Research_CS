@@ -19,8 +19,10 @@ import Layout from '../layouts/BlogPost.astro';
 		</section>
 		<section class="about-details cloudsecure-topics" style="max-width:100%; padding:2.5rem 2rem; box-sizing:border-box; overflow-wrap:break-word;">
 			<h2>Background</h2>
-			<p>I'm Alex McCarthy, a security researcher focused on building practical tools and systems for cloud security, developer workflows, and AI-powered analysis. This site is my personal space to document ongoing experiments, technical findings, and project results.</p>
-			<img src="/IMG_8900.JPG" alt="Description of image" style="max-width:100%;border-radius:16px;" />
+			<p>I'm Alex McCarthy, a freelance researcher focused on building practical tools and systems for cloud security, developer workflows, and AI-powered analysis of documents. This site is my personal space to document ongoing experiments, technical findings, and project results.</p>
+			<p>This website originally started as an Internship project with Cloudsecure, led by Lucien O'Donoghue, and I have decided to keep working on a number of projects in my spare time.</p>
+			<p>I am a third year Mathematics undergraduate studying at Durham University. I primarily focus on Statistics and Number theory, with a keen interest in cryptography, stochastic processes/Markov Chains and Mathematical Modelling of complex systems. I also like a number of sports, such as football, Formula 1 and Padel.</p>
+			<img src="/IMG_8900.JPG" alt="Description of image" class="about-photo" />
 			<h2>Contact</h2>
 			<p>For questions, feedback, or collaboration opportunities, please reach out via <a href="https://www.linkedin.com/in/alex-mccarthy-a43362349/" target="_blank" rel="noopener noreferrer" style="color:#00c6ff;font-weight:600;text-decoration:underline;">LinkedIn</a>.</p>
 		</section>
@@ -59,7 +61,7 @@ import Layout from '../layouts/BlogPost.astro';
     .about-description {
       font-size: 1.35rem;
       margin-bottom: 1.5rem;
-      color: #00c6ff;
+      color: #ffffff;
       font-weight: 600;
       text-shadow: 0 2px 8px rgba(0,0,0,0.18);
     }
@@ -80,6 +82,14 @@ import Layout from '../layouts/BlogPost.astro';
       font-size: 1.15rem;
       color: #e3e3e3;
       margin-bottom: 1rem;
+    }
+    .about-photo {
+      display: block;
+      margin: 2rem auto;
+      max-width: 320px;
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.18);
     }
     .about-main {
       width: 100%;

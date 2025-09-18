@@ -25,14 +25,14 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 			<section class="topics cloudsecure-topics">
 				<h2>Recent Topics</h2>
 				<ul class="topics-list cloudsecure-list">
-					<li>AI-driven vulnerability detection in cloud environments</li>
-					<li>Red team automation and adversarial simulation</li>
-					<li>Integrating LLMs for code review and security analysis</li>
-					<li>Chain of Thought & Tree of Thoughts in security reasoning</li>
-					<li>Automated security scanning & alerting workflows</li>
-					<li>Preference Optimization for AI model selection</li>
-					<li>Model evaluation, benchmarking, and explainability</li>
-					<li>Emerging cloud security technologies & trends</li>
+					<li><a href="/blog">AI-driven vulnerability detection in cloud environments</a></li>
+					<li><a href="/blog">Red team automation and adversarial simulation</a></li>
+					<li><a href="/blog">Integrating LLMs for code review and security analysis</a></li>
+					<li><a href="/blog">Chain of Thought & Tree of Thoughts in security reasoning</a></li>
+					<li><a href="/blog">Automated security scanning & alerting workflows</a></li>
+					<li><a href="/blog">Preference Optimization for AI model selection</a></li>
+					<li><a href="/blog">Model evaluation, benchmarking, and explainability</a></li>
+					<li><a href="/blog">Emerging cloud security technologies & trends</a></li>
 				</ul>
 			</section>
 		</main>
@@ -49,7 +49,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 			}
 			.cloudsecure-hero {
 				background: linear-gradient(90deg, #232526 0%, #00c6ff 100%);
-				color: #e3e3e3;
+				color: #ffffff;
 				border-radius: 24px;
 				padding: 3rem 2rem;
 				box-shadow: 0 4px 24px rgba(0,0,0,0.18);
@@ -67,14 +67,14 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 			.hero-subtitle {
 				font-size: 1.35rem;
 				margin-bottom: 1.5rem;
-				color: #00c6ff;
+				color: #E0F7FF;
 				font-weight: 600;
 				text-shadow: 0 2px 8px rgba(0,0,0,0.18);
 			}
 			.hero-intro {
 				font-size: 1.15rem;
 				margin-bottom: 2rem;
-				color: #e3e3e3;
+				color: #ffffff;
 				line-height: 1.7;
 			}
 			.hero-actions {
@@ -131,6 +131,19 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 				margin-bottom: 0.5rem;
 				color: #fff;
 				box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+				transition: background 0.2s;
+			}
+
+			.cloudsecure-list li:hover {
+				background: rgba(24, 26, 27, 1);
+			}
+
+			.topics-list li a {
+				display: block;
+				color: inherit;
+				text-decoration: none;
+				height: 100%;
+				width: 100%;
 			}
 			@media (max-width: 900px) {
 				.cloudsecure-style {
